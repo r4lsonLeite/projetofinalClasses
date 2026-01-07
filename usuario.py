@@ -1,5 +1,5 @@
 class Usuario:
-    def __init__(self, nome, idade, moradia, area_util, experiencia, criancas, outros_animais):
+    def __init__(self, nome: str, idade: int, moradia: str, area_util: float, experiencia: str, criancas: bool, outros_animais: bool):
         self.nome = nome
         self.idade = idade
         self.moradia = moradia 
@@ -7,9 +7,11 @@ class Usuario:
         self.experiencia = experiencia
         self.criancas = criancas  
         self.outros_animais = outros_animais
+        
     def cadastrar(self):
         print(f" Usuário {self.nome} cadastrado com sucesso!")
-    def editar(self, novo_nome, nova_idade, nova_moradia, nova_area, nova_experiencia, tem_criancas, novos_outros_animais):
+
+    def editar(self, novo_nome: str, nova_idade: int, nova_moradia: str, nova_area: float, nova_experiencia: str, tem_criancas: bool, novos_outros_animais: bool):
         self.nome = novo_nome
         self.idade = nova_idade
         self.moradia = nova_moradia
