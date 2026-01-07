@@ -1,5 +1,5 @@
 class Usuario:
-    def __init__(self, nome, idade, moradia, area_util, experiencia, criancas, outros_animais):
+    def __init__(self, nome:str, idade: int, moradia: str, area_util: float, experiencia: str, criancas: bool, outros_animais:boll):
         self.nome = nome
         self.idade = idade
         self.moradia = moradia 
