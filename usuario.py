@@ -8,7 +8,7 @@ class Usuario:
         self.criancas = criancas  
         self.outros_animais = outros_animais
     def cadastrar(self):
-        print(f" Usuário {self.nome} cadastrado com sucesso!") 
+        print(f" Usuário {self.nome} cadastrado com sucesso!")
     def editar(self, novo_nome, nova_idade, nova_moradia, nova_area, nova_experiencia, tem_criancas, novos_outros_animais):
         self.nome = novo_nome
         self.idade = nova_idade
