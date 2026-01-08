@@ -1,5 +1,6 @@
 from animais import Animais
 from usuario import Usuario
+from triagem import triagem
 
 
 def main() -> None:
@@ -64,6 +65,21 @@ def main() -> None:
         )
     except ValueError as e:
         print("Deu erro (como esperado):", e)
+
+    print("\n[4] Triagem")
+    # usa o `usuario` e `animal` já criados acima
+    tri = triagem(
+        user=usuario,
+        animal=animal,
+        pontuacao=75,
+        elegivel=False,
+        observacoes="Teste de compatibilidade",
+    )
+    tri.cadastrar()
+    tri.avaliar()
+    elegivel = tri.calcular_compatibilidade()
+    print("Triagem elegível?", elegivel)
+    tri.validar_politicas()
 
 
 if __name__ == "__main__":
