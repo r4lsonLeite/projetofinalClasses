@@ -3,8 +3,12 @@ from animais import animais
 
 
 class triagem:
-    def __init__(self, pontuacao:str, elegivel:bool, observacoes:str):
+    def __init__(self, user: Usuario, animal: animal, pontuacao:str, elegivel:bool, observacoes:str):
         self.pontuacao = pontuacao
         self.elegivel = elegivel
         self.observacoes = observacoes
-        pass
+    if self.pontuação >= 50:
+        self.elegivel = True
+    else:
+        self.elegivel = False
+    
