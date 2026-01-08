@@ -7,4 +7,4 @@ class triagem:
         self.pontuacao = pontuacao
         self.elegivel = elegivel
         self.observacoes = observacoes
-        
+        pass
